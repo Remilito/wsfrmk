@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Le Bar 10 - Bar international</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<div id="blockpage">
+ <header>
+    <h1>Le Bar 10</h1>
+     <h2>Bar international</h2>
+ </header>
+ <nav id="menu">
+      <ul>
+      <% subpages.forEach(function(page, index){ %>
+          <li><a href=<%= page[1]%> ><%=page[0]%></a></li>
+      <% });%>
+      </ul>
+</nav>
+<section id="mainaera">
+    <article id="contents">
+        <h1>partie de droite</h1>
+    </article>
+    <aside>
+        <h1>Le Bar 10</h1>
+        <p>10 rue de l'Odeon<br>75006 Paris</p>
+    </aside>
+</section>
+<footer>
+    <p>Tous droits réservés</p>
+</footer>
+</div>
+</body>
+</html>

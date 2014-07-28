@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+}
+
+#blockpage{
+    padding:0px;
+    margin-top: 0px;
+}
+
+#menu{
+    background-color: rgb(100,0,0);
+    color: white;
+    width: 20%;
+    margin: 0px;
+    float: left;
+    text-align: center;
+    padding: 0px;
+}
+
+section{
+    margin-left: 25%;
+    margin-top: 0%;
+}
+
+header{
+    background: linear-gradient(to right,rgb(100,0,0), rgb(70,0,0));
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+#menu ul{
+    list-style-type: none;
+}
+
+#menu li:hover{
+    background-color: rgb(150,0,0);
+}
+
+#menu a{
+    font-size: 40px;
+    color: white;
+}
+
+footer{
+    text-align: right;
+}
+
+aside{
+    background: linear-gradient(rgb(180,180,220),rgb(140,140,160));
+    margin-left: 80%;
+    margin-right: 10%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+article{
+    text-align: center;
+}
