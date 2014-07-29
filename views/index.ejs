@@ -2,14 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Le Bar 10 - Bar international</title>
+  <title><%- wsTitle %></title>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
 <div id="blockpage">
  <header>
-    <h1>Le Bar 10</h1>
-     <h2>Bar international</h2>
+    <%- wsHeaderContents%>
  </header>
  <nav id="menu">
       <ul>
@@ -20,15 +19,14 @@
 </nav>
 <section id="mainaera">
     <article id="contents">
-        <h1>partie de droite</h1>
+        <%- wsContents %>
     </article>
     <aside>
-        <h1>Le Bar 10</h1>
-        <p>10 rue de l'Odeon<br>75006 Paris</p>
+        <%- wsAsideContents %>
     </aside>
 </section>
 <footer>
-    <p>Tous droits réservés</p>
+    <%- wsFooterContents %>
 </footer>
 </div>
 </body>
