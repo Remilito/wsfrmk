@@ -6,17 +6,19 @@ wsContents: <p>Sangria, Jukebox et Jean-Michel!</p>
 wsAsideContents: <h1>Le Bar 10</h1><p>10 rue de l'Odéon<br>75006 Paris</p>
 
 home:
- title: Accueil
+ title: Home
  page: index.ejs
 history:
- title: l'Histoire du 10
+ title: The story
  page: index.ejs
+ params: [wsContents]
+ wsContents: <h1>L'Histoire du 10</h1><p>C'est Pepito qui a ouvert le 10 ... </p>
 menu:
- title: La Carte
- page: test.html
+ title: Menu
+ page: index.ejs
 findus:
- title: Trouver le 10
+ title: Find us
  page: index.ejs
 contact:
- title: Nous Contacter
+ title: Contact us
  page: index.ejs

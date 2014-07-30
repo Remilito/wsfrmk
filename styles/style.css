@@ -58,3 +58,11 @@ aside{
 article{
     text-align: center;
 }
+
+form{
+    display: inline;
+}
+
+input{
+    cursor: pointer;
+}

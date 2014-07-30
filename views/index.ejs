@@ -8,12 +8,16 @@
 <body>
 <div id="blockpage">
  <header>
-    <%- wsHeaderContents%>
+    <%- wsHeaderContents %>
  </header>
  <nav id="menu">
+     <div id="languagesBox">
+         <form action="/setlocale/en"><input type="submit" class="languageButton" id="enLButton" value="EN"></form>
+         <form action="/setlocale/fr"><input type="submit" class="languageButton" id="frLButton" value="FR"></form>
+     </div>
       <ul>
       <% subpages.forEach(function(page, index){ %>
-          <li><a href=<%= page[1]%> ><%=page[0]%></a></li>
+          <li><a href=<%= page[1]%> ><%= __(page[0])%></a></li>
       <% });%>
       </ul>
 </nav>
