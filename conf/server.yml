@@ -1,9 +1,16 @@
 pages: [home, history, menu, findus, contact]
+languages: [en,fr,de]
+
 wsTitle: Le Bar 10 - Bar international
 wsHeaderContents: <h1>Le Bar 10</h1>
 wsFooterContents: <p>Tous droits réservés</p>
 wsContents: <p>Sangria, Jukebox et Jean-Michel!</p>
-wsAsideContents: <h1>Le Bar 10</h1><p>10 rue de l'Odéon<br>75006 Paris</p>
+wsAsideContents: >
+                   <h1>Le Bar 10</h1><p>10 rue de l'Odéon<br>75006 Paris</p><br><p>Lundi-Samedi 18h-2h</p>
+                   <div><table id="transportations">
+                   <tr><td><div id="metro"/></td><td><div id="m4"/></td><td><div id="m10"/></td><td>Odéon</td></tr>
+                   <tr><td><div id="rer"/></td><td><div id="rerB"/></td><td><div id="rerC"/></td><td>St-Michel Notre Dame</td></tr>
+                   </table></div>
 
 home:
  title: Home

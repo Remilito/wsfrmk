@@ -21,6 +21,7 @@ app.use(i18n.init);
 var pArray = new Array();
 var defaultParameters = new Object();
 
+
 /* yaml conf loading */
 try{
     var conf = yaml.safeLoad(fs.readFileSync('./conf/server.yml','utf8'));
@@ -53,6 +54,7 @@ function createDefaultParameters(){
     defaultParameters.wsAsideContents = conf.wsAsideContents;
     defaultParameters.wsContents = conf.wsContents;
     defaultParameters.wsTitle = conf.wsTitle;
+    defaultParameters.languages = conf.languages;
 }
 
 

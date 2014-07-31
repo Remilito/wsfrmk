@@ -1,25 +1,15 @@
 *{
-    margin: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-#blockpage{
-    padding:0px;
-    margin-top: 0px;
-}
-
-#menu{
-    background-color: rgb(100,0,0);
-    color: white;
-    width: 20%;
-    margin: 0px;
-    float: left;
-    text-align: center;
-    padding: 0px;
-}
-
-section{
-    margin-left: 25%;
-    margin-top: 0%;
+html, body, #wrapper{
+    padding:0;
+    margin: 0;
+    background-color: rgb(250,250,250);
+    height: 100%;
+    bottom: 0;
+    top:0;
 }
 
 header{
@@ -27,11 +17,115 @@ header{
     font-size: 64px;
     color: white;
     text-align: center;
-    margin: 0px;
+    margin: 0;
+    height: 20%;
 }
+
+header #homeButton{
+    float: left;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    background-image: url("resources/home.png");
+    background-position: 0px 0px;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    outline: 0;
+    height: 64px;
+    width: 64px;
+    margin-left: 15px;
+}
+
+#metros{
+    display: inline;
+}
+
+#metro, #m10, #m4, #rer, #rerC, #rerB{
+    background-position: 0px 0px;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    outline: 0;
+    height: 32px;
+    width: 32px;
+}
+#metro{
+    background-image: url("resources/metro.png");
+}
+#m4{
+    background-image: url("resources/4.png");
+}
+#m10{
+    background-image: url("resources/10.png");
+}
+#rer{
+    background-image: url("resources/rer.png");
+}
+#rerB{
+    background-image: url("resources/rerB.png");
+}
+#rerC{
+    background-image: url("resources/rerC.png");
+}
+
+#middle{
+    height: 70%
+}
+
+footer{
+    text-align: right;
+    color: rgb(100,0,0);
+    height: 10%;
+    bottom: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+footer p{
+    margin:0;
+    padding: 0;
+}
+
+#menu{
+    background-color: rgba(100,0,0,1);
+    color: rgba(255,255,255,0.2);
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5%;
+    float: left;
+    text-align: left;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#menu:hover{
+    background-color: rgba(100,0,0,1);
+    color: white;
+}
+
+section{
+    margin-left: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 70%;
+}
+
+
 
 #menu ul{
     list-style-type: none;
+    padding: 0;
 }
 
 #menu li:hover{
@@ -41,18 +135,26 @@ header{
 #menu a{
     font-size: 40px;
     color: white;
+    text-decoration: none;
 }
 
-footer{
-    text-align: right;
-}
+
 
 aside{
-    background: linear-gradient(rgb(180,180,220),rgb(140,140,160));
-    margin-left: 80%;
+    position: relative;
+    background: linear-gradient(rgb(220,220,225),rgb(200,200,205));
+    opacity: 0.2;
+    margin-left: 70%;
     margin-right: 10%;
+    margin-top: 10%;
     border-radius: 5px;
     text-align: center;
+    height: 60%;
+    width: 20%;
+}
+
+aside:hover{
+    opacity: 1;
 }
 
 article{
@@ -65,4 +167,27 @@ form{
 
 input{
     cursor: pointer;
+}
+
+#enLangButton, #frLangButton, #deLangButton{
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: transparent;
+    cursor: pointer;
+    outline: 0;
+    height: 44px;
+    width: 44px;
+}
+#enLangButton{
+    background-image: url("resources/gb.png");
+}
+
+#frLangButton{
+    background-image: url("resources/fr.png");
+}
+
+#deLangButton{
+    background-image: url("resources/de.png");
 }

@@ -6,14 +6,18 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-<div id="blockpage">
- <header>
+<div id="wrapper">
+<header>
+    <a href="/" id="homeButton"></a>
     <%- wsHeaderContents %>
  </header>
+ <div id="middle">
  <nav id="menu">
      <div id="languagesBox">
-         <form action="/setlocale/en"><input type="submit" class="languageButton" id="enLButton" value="EN"></form>
-         <form action="/setlocale/fr"><input type="submit" class="languageButton" id="frLButton" value="FR"></form>
+         <% languages.forEach(function(lang, index){ %>
+         <form action=<%= "/setlocale/"+lang %>><input type="submit" class="languageButton" id=<%= lang+"LangButton" %> value=<%= lang %>></form>
+        <% });%>
+        <!-- <form action="/setlocale/fr"><input type="submit" class="languageButton" id="frLButton" value="FR"></form> -->
      </div>
       <ul>
       <% subpages.forEach(function(page, index){ %>
@@ -29,6 +33,7 @@
         <%- wsAsideContents %>
     </aside>
 </section>
+</div>
 <footer>
     <%- wsFooterContents %>
 </footer>
